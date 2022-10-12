@@ -1,8 +1,8 @@
-const getFirstNames = require("../country/state/city/index");
+const peopleNames = require("../country/state/city/index");
 
-const listOfNames = require("../utilities/utils/index");
+const getFirstNames = require("../utilities/utils/index");
 
-function getPeopleInCity(listOfNames) {
-  return getFirstNames;
-}
-console.log(getPeopleInCity(listOfNames));
+const getPeopleInCity = (peopleNames) => {
+  return getFirstNames(peopleNames);
+};
+module.exports = getPeopleInCity;
